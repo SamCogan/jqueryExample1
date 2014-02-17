@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>JQuery Backstretch Plug</title>
+		<link rel="stylesheet" type="text/css" href="JQex.css" />
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js">
+		</script>
+		<script src="backstretch.js"></script>
+	</head>
+	<body>
+		<div id="example_fade">
+			Hello World!<br />
+			This div fades in on page load using jquery!
+		</div>
+		<button>Click</button>
+		<script>
+		 $.backstretch([
+"http://dl.dropbox.com/u/515046/www/outside.jpg", "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg", "http://dl.dropbox.com/u/515046/www/cheers.jpg"
+], {duration: 3000, fade: 750});
+		$(document).ready(function(){
+  $("button").click(function(){
+    $("#example_fade").slideToggle();
+  });
+}); 
+</script>
+
+	</body>
+
+</html>
